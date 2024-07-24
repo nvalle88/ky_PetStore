@@ -7,8 +7,6 @@ namespace PetStore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Logo.GetLogo());
-
             Console.WriteLine("Welcome to the Pet Store!");
             string userInput;
             do
@@ -49,7 +47,7 @@ namespace PetStore
                 KittenFood = false
             };
         }
-        public static void PrintConsole(CatFood catFood)    
+        public static void PrintConsole(CatFood catFood)
         {
             Console.WriteLine("Product added!");
             Console.WriteLine();
