@@ -100,15 +100,15 @@ namespace PetStore
             product.Quantity = int.Parse(Console.ReadLine()!);
 
             if (product is CatFood food)
-                AddCatFood(food);
+                AddDetail(food);
             else
                 if (product is DogLeash leash)
-                    AddDogLeash(leash);
-            
+                AddDetail(leash);
+
             return product;
         }
 
-        static DogLeash AddDogLeash(DogLeash dogLeash)
+        static DogLeash AddDetail(DogLeash dogLeash)
         {
             Console.WriteLine("Enter Dog Leash Length in Inches:");
             dogLeash.LengthInches = int.Parse(Console.ReadLine()!);
@@ -119,7 +119,7 @@ namespace PetStore
             return dogLeash;
         }
 
-        static CatFood AddCatFood(CatFood catFood)
+        static CatFood AddDetail(CatFood catFood)
         {
             Console.WriteLine("Enter Cat Food Weight in Pounds:");
             catFood.WeightPounds = double.Parse(Console.ReadLine()!);
